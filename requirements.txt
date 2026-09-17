@@ -1,0 +1,9 @@
+torch==2.5.0
+numpy==2.0.2
+pandas==2.3.3
+scikit-learn==1.6.1
+scipy==1.13.1
+PyYAML==6.0.2
+laspy==2.6.1
+xgboost==2.1.4
+diptest==0.10.0

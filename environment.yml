@@ -1,0 +1,19 @@
+name: rice-vigor-methods
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch=2.5.0
+  - pytorch-cuda=12.4
+  - numpy=2.0.2
+  - pandas=2.3.3
+  - scikit-learn=1.6.1
+  - scipy=1.13.1
+  - pyyaml=6.0.2
+  - laspy=2.6.1
+  - xgboost=2.1.4
+  - pip
+  - pip:
+      - diptest==0.10.0

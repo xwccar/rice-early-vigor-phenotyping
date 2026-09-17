@@ -1,0 +1,7 @@
+results: outputs/combined_results_by_seed.csv
+reference_vigor: data/reference_vigor.csv
+score_column: vigor_score
+metrics: [r2, rmse, rrmse_percent, me_pred_minus_true]
+alpha: 0.05
+bootstrap_replicates: 1000
+output_dir: outputs/statistics

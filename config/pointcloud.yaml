@@ -1,0 +1,24 @@
+data:
+  pointcloud_dir: data/pointcloud_1024
+  manual_traits: data/manual_traits.csv
+  splits: data/splits.csv
+  dates: ["0806", "0810", "0814", "0818", "0822", "0826", "0830", "0903", "0907", "0911"]
+  dat_values: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36]
+training:
+  seeds: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+  batch_size: 8
+  max_epochs: 200
+  min_epochs: 40
+  patience: 30
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  min_learning_rate: 0.00001
+  gradient_clip: 1.0
+  feature_transform_weight: 0.001
+  num_workers: 0
+  device: auto
+models:
+  names: [pointnet, pointnet2, dgcnn, pct, pointtransformer]
+  dgcnn_k: 20
+  transformer_k: 16
+output_dir: outputs/pointcloud

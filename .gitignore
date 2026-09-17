@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+.workbuddy/
+.DS_Store
+Thumbs.db
+
+# Experimental data and generated artifacts
+data/*.csv
+data/*.xlsx
+data/*.las
+data/*.laz
+data/*.npz
+data/pointcloud_1024/
+outputs/
+results/
+logs/
+checkpoints/
+*.pt
+*.pth
+
+# Local path overrides
+config/paths.local.yaml

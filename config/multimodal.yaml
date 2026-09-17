@@ -1,0 +1,31 @@
+data:
+  model_inputs: data/model_inputs.csv
+  splits: data/splits.csv
+  target_table: data/reference_vigor.csv
+  target_column: vigor_score
+  dat_values: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36]
+  multispectral_features: [NDVI, LCI, GNDVI, OSAVI, NDRE, canopy_coverage]
+  lidar_features: [plant_height, predicted_tiller, predicted_leaf_age]
+training:
+  seeds: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+  batch_size: 16
+  max_epochs: 200
+  min_epochs: 40
+  patience: 30
+  learning_rate: 0.001
+  optimizer: sgd
+  momentum: 0.0
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  device: auto
+  hidden_size: 16
+  representation_size: 16
+  fusion_hidden: [32, 16]
+  dropout: 0.15
+  ogr_epsilon: 0.00000001
+controls:
+  pointnet_checkpoint_root: outputs/pointcloud
+  descriptor_target: tiller
+  maturity_threshold_source: plant_specific_manual
+  no_attainment_time: 40.0
+output_dir: outputs/multimodal
