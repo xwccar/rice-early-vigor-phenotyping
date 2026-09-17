@@ -4,7 +4,7 @@ This repository contains the analysis code accompanying the manuscript *Estimati
 
 ## Data
 
-[Point-cloud dataset and labels](https://drive.google.com/drive/folders/1aRxrWtS6Yc7aUzaIk92wMO2Zwj5C_ETQ?usp=sharing)
+[Processed dataset and analysis inputs](https://drive.google.com/drive/folders/1aRxrWtS6Yc7aUzaIk92wMO2Zwj5C_ETQ?usp=sharing)
 
 ## Repository structure
 
