@@ -1,6 +1,6 @@
 # Rice Early Vigor Methods
 
-Reference implementation accompanying the manuscript *Estimation of a phenology-derived early growth vigor proxy in rice using time-series UAV LiDAR and multispectral phenotyping*.
+This repository contains the analysis code accompanying the manuscript *Estimation of a phenology-derived early growth vigor proxy in rice using time-series UAV LiDAR and multispectral phenotyping*.
 
 ## Data
 
